@@ -554,10 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.flex {
-  display: flex;
-}
-
 .grid {
   display: grid;
 }
@@ -568,8 +564,4 @@ video {
 
 .place-content-center {
   place-content: center;
-}
-
-.radial-blue{
-  background: radial-gradient(lightyellow, skyblue)
 }
