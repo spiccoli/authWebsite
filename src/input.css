@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.debug {
+    border-width: 2px;
+    border-color: rgb(40, 162, 9); 
+    border-style: solid;
+}
