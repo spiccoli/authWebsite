@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Template</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
+
 <body>
-    LOGUEASTE MOSTRO
+    <h1 class="grid place-content-center pt-6 ">ADMIN PORTAL</h1>
+    <div class="flex place-content-center ">
+        <div
+            class="mt-10 grid place-content-center bg-slate-500 bg-opacity-30 rounded-lg p-4 shadow-md overflow-hidden">
+            <p class="mb-5">LOGIN</p>
+            <form action="/build/signedin.html" method="POST">
+                <div>
+                    <label for="login-identifier">Username:</label>
+                    <input type="text" id="login-identifier" name="identifier" class="bg-opacity-40 bg-slate-200 border-black overflow-hidden rounded-lg" required>
+                </div>
+                <div>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password"
+                        class="bg-opacity-40 bg-slate-200 overflow-hidden rounded-lg" required>
+                </div>
+                <div class="mt-10 ml-40 text-sm ">
+                    <a href="./signup.html">CREATE ACCOUNT</a>
+                    <button type="submit" class="ml-8">
+                        NEXT
+                    </button>
+                </div>
+            </form>
+        </div>
+
 </body>
+
 </html>
