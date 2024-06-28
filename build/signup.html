@@ -13,11 +13,12 @@
     <div class="flex place-content-center ">
         <div
             class="mt-10 grid place-content-center bg-slate-500 bg-opacity-30 rounded-lg p-4 shadow-md overflow-hidden">
-            <p class="mb-5">LOGIN</p>
+            <p class="mb-5">CREATE AN ACCOUNT</p>
             <form action="/build/login.html" method="POST">
                 <div>
                     <label for="login-identifier">Username:</label>
-                    <input type="text" id="login-identifier" name="identifier" class="bg-opacity-40 bg-slate-200 border-black overflow-hidden rounded-lg" required>
+                    <input type="text" id="login-identifier" name="identifier"
+                        class="bg-opacity-40 bg-slate-200 border-black overflow-hidden rounded-lg" required>
                 </div>
                 <div>
                     <label for="login-password">Password:</label>
@@ -25,10 +26,11 @@
                         class="bg-opacity-40 bg-slate-200 overflow-hidden rounded-lg" required>
                 </div>
                 <div class="mt-10 ml-40 text-sm ">
-                    <a href="./signup.html">CREATE ACCOUNT</a>
-                    <button type="submit" class="ml-8">
-                        NEXT
+
+                    <button type="submit" class="ml-10">
+                        <p>NEXT</p>
                     </button>
+                    
                 </div>
             </form>
         </div>
