@@ -1,10 +1,17 @@
 <?php
-if ( empty($_POST["name"])) {   
-    die ("Invalid Name");
-}
 
-if(! filter_var($_POST["email"],FILTER_VALIDATE_EMAIL)) {
-    die ("Invalid email");
-}
+$host = "localhost";
+$dbname = "usersdb";
+$username = "root";
+$password = "";
 
-print_r($_POST);
+$mysqli = new mysqli(hostname: $host,
+                     username: $username,
+                     password: $password,
+                     database: $dbname);
+
+if($mysqli->connect_errno){
+    die("connection error" . $mysqli->connect_errno);
+};
+
+return $mysqli;
