@@ -1,4 +1,5 @@
 <?php
+$is_invalid = false;
 if($_SERVER["REQUEST_METHOD"] === "POST"){
     $mysqli = require __DIR__ . "/database.php";
 
@@ -32,10 +33,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 <body>
     <h1 class="grid place-content-center pt-6 ">ADMIN PORTAL</h1>
     
-    <?php
-    if($is_invalid) :  ?>
-        <em>Invalid Login</em>
-    <?php endif ; ?>
+    <?php 
+    if ($is_invalid): ?>
+        <em>Invalid login</em>
+    <?php endif; ?>
    
     <div class="flex place-content-center ">
         <div
