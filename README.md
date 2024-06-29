@@ -1,4 +1,4 @@
-------WORK IN PROGRESS------
+------WORK IN PROGRESS------\n
 This simple website uses the following technologies:
 tailwind for styling
 PHP to connect the user's input to the database
