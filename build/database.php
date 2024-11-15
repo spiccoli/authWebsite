@@ -1,17 +1,19 @@
 <?php
 
-$host = "localhost";
-$dbname = "usersdb";
-$username = "root";
-$password = "";
+// Database credentials
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'usersdb');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 
-$mysqli = new mysqli(hostname: $host,
-                     username: $username,
-                     password: $password,
-                     database: $dbname);
+// Create a new MySQLi connection
+$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-if($mysqli->connect_errno){
-    die("connection error" . $mysqli->connect_errno);
-};
+// Check connection
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
 
+// Return the MySQLi object
 return $mysqli;
+?>
